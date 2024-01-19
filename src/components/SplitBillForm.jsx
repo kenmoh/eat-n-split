@@ -17,7 +17,7 @@ const SplitBillForm = ({ selectedFriend, onSplitBill }) => {
   return (
     <div className="bg-orange-100 p-5 rounded-md">
       <h1 className="font-bold text-center">
-        SPLIT BILL WITH {selectedFriend.name}
+        SPLIT BILL WITH {selectedFriend.name.toUpperCase()}
       </h1>
       <form onSubmit={handleSubmit}>
         <Input

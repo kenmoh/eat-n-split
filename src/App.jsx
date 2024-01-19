@@ -61,6 +61,7 @@ function App() {
   return (
     <>
       <div className="md:w-4/5 mx-auto md:p-10 p-5 mt-10 ">
+        <h1 className="mb-5 text-4xl font-bold text-teal-900">Friends</h1>
         <div className="flex w-full flex-wrap justify-between">
           <div className="md:w-[45%] w-full">
             <FriendList
