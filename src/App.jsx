@@ -60,14 +60,9 @@ function App() {
   };
   return (
     <>
-      <div className="w-4/5 mx-auto  p-10 ">
-        <div className="flex w-full justify-between">
-          {/* FriendList and SplitBillForm are wrapped in a div to keep 
-          them side by side. The div has a class of "w-1/2" to keep 
-          them side by side. 
-          The div also has a class of "flex gap-10" to add some space between them.
-           */}
-          <div className="w-[45%]">
+      <div className="md:w-4/5 mx-auto md:p-10 p-5 mt-10 ">
+        <div className="flex w-full flex-wrap justify-between">
+          <div className="md:w-[45%] w-full">
             <FriendList
               friends={friends}
               onSelection={handleSelection}
@@ -75,7 +70,7 @@ function App() {
             />
           </div>
           {selectedFriend && (
-            <div className="w-[53%]">
+            <div className="md:w-[53%] w-full">
               <SplitBillForm
                 selectedFriend={selectedFriend}
                 onSplitBill={handleSplitBill}
