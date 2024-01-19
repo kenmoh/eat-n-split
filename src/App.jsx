@@ -81,7 +81,7 @@ function App() {
 
         {/* Add Friend Form  */}
         {showAddFriend && (
-          <div className="w-full md:w-1/2 bg-orange-100 p-5 my-5 rounded-md">
+          <div className="w-full md:w-[45%] bg-orange-100 p-5 my-5 rounded-md">
             <AddFriendForm onAddFriend={handleAddFriend} />
           </div>
         )}
